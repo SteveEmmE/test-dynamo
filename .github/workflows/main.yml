@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@master
     - uses: ./.github/actions
       with:
-        args: --acl public-read --follow-symlinks --delete --exclude '.git/** .github/** README.md'
+        args: --acl public-read --follow-symlinks --delete --exclude '.git/*' '.github/*' 'README.md'
       env:
         AWS_S3_BUCKET: test-github-actions-stefano-monti-2
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
