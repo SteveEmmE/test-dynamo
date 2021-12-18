@@ -1,0 +1,6 @@
+name: "Create Container"
+description: "Create Container"
+author: SteveEmmE
+runs:
+  using: docker
+  image: Dockerfile
